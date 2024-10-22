@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# RAKBANK Account Registration - React Native App
 
-## Get started
+🚀 **RAKBANK Account Registration** is a React Native and Expo app that allows users to register and submit account details. The app is designed for mobile platforms, featuring a clean and responsive UI. It's integrated with the Spring Boot backend API you need to start that server too on your local.
 
-1. Install dependencies
+## ✨ Features
+- User registration form with full name, email, and password fields
+- Validation for form fields
+- Confirmation screen upon successful form submission which sends a request to the backend( the other part of this assessment)
+- Reusable components for input fields and buttons
 
-   ```bash
-   npm install
-   ```
+## 🏗️ Project Structure
+The project uses a file-based routing structure with the following folders:
+- `app/`: Contains screens and layout files
+    - `index.tsx/`: Main registration page which uses other re-usable components `explore.tsx`, etc.
+    - `submission-success.tsx`: final screen that's shown when a successful API request is sent and a new user is created
+- `components/`: Reusable components (e.g., buttons, input fields)
+- `constants/`: Constant values used across the app
+- `utils/`: Utility functions
 
-2. Start the app
+## 🚀 Getting Started
 
-   ```bash
-    npx expo start
-   ```
+### Prerequisites
+- Node.js
+- Expo CLI (`npm install -g expo-cli`)
 
-In the output, you'll find options to open the app in a
+### Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/captain-jack-sparrow909/rak_RN_assessment_FE.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd rak_RN_assessment_FE
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### Running the App
+To start the app:
 ```bash
-npm run reset-project
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Start backend server
+clone this repo and start the server locally then when you click on the signup button the request will succeed and it won't throw you error
+```bash
+git clone https://github.com/captain-jack-sparrow909/rak_RN_assessment_backend
+```
+This command will launch Expo DevTools in your browser, and you can run the app on a simulator or a physical device.
 
-## Learn more
+## 🛠️ Components
+- **Reusable Button**: Customizable button used for "Sign Up" and "Sign Up with Google".
+- **Reusable Input Field**: Configurable input field component for form fields.
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📁 Folder Structure
+- `app/`: Core screens and navigation files
+- `components/`: Shared components for consistent styling
+- `assets/`: Images and static assets
+- `constants/`: Configuration values
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📜 License
+This project is open-source and available under the MIT License.
 
-## Join the community
+## 📧 Contact
+For any questions or suggestions, feel free to reach out.
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
