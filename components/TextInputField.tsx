@@ -5,15 +5,17 @@ import { Ionicons } from '@expo/vector-icons';
 interface TextInputFieldProps {
   placeholder: string;
   iconName: keyof typeof Ionicons.glyphMap;
+  testID: string;
   secureTextEntry?: boolean;
   onChangeText: (text: string) => void;
 }
 
-const TextInputField = ({ placeholder, iconName, secureTextEntry, onChangeText }: TextInputFieldProps) => {
+const TextInputField = ({ placeholder, iconName, secureTextEntry, onChangeText, testID }: TextInputFieldProps) => {
   return (
     <View style={styles.container}>
       <Ionicons name={iconName} size={24} color="#a9a9a9" style={styles.icon} />
       <TextInput
+        testID={testID}
         placeholder={placeholder}
         secureTextEntry={secureTextEntry}
         style={styles.input}

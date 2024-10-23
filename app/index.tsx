@@ -78,9 +78,9 @@ export default function RegisterScreen() {
       <RAKLogoComponent />
       <Text style={styles.title}>Create Account</Text>
 
-      <TextInputField placeholder="Full Name" iconName="person-outline" onChangeText={(value)=> handleFormData("name", value)}/>
-      <TextInputField placeholder="Email address" iconName="mail-outline" onChangeText={(value)=> handleFormData("email", value)}/>
-      <TextInputField placeholder="Password" iconName="lock-closed-outline" secureTextEntry={true} onChangeText={(value)=> handleFormData("password", value)}/>
+      <TextInputField placeholder="Full Name" testID="fullName" iconName="person-outline" onChangeText={(value)=> handleFormData("name", value)}/>
+      <TextInputField placeholder="Email address" testID="email" iconName="mail-outline" onChangeText={(value)=> handleFormData("email", value)}/>
+      <TextInputField placeholder="Password" testID="password" iconName="lock-closed-outline" secureTextEntry={true} onChangeText={(value)=> handleFormData("password", value)}/>
 
       <View style={styles.checkboxContainer}>
         <CheckboxComponent
@@ -92,13 +92,14 @@ export default function RegisterScreen() {
         </Text>
       </View>
 
-      <ButtonComponent title="SIGN UP" onPress={handleSignUp} />
+      <ButtonComponent title="SIGN UP" onPress={handleSignUp} testID="signUp"/>
       <ButtonComponent
         title="Sign Up with Google"
         style={styles.googleButton}
         textStyle={{ color: '#282828', fontWeight: 'regular' }}
         logoName='logo-google'
         onPress={() => {}}
+        testID="googleSignUp"
       />
 
       <TouchableOpacity>

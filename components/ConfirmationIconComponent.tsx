@@ -5,6 +5,7 @@ const ConfirmationIconComponent = () => {
   return (
     <View>
       <Image
+        testID="confirmation-icon"
         source={require('../assets/success.png')}
         style={styles.icon}
       />

@@ -18,6 +18,7 @@
     "@expo/vector-icons": "^14.0.2",
     "@react-native-community/checkbox": "^0.5.17",
     "@react-navigation/native": "^6.0.2",
+    "@testing-library/react-native": "^12.7.2",
     "axios": "^1.7.7",
     "expo": "~51.0.28",
     "expo-checkbox": "~3.0.0",

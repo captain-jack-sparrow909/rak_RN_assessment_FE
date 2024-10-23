@@ -9,7 +9,7 @@ interface CustomCheckboxProps {
 
 const CheckboxComponent: React.FC<CustomCheckboxProps> = ({ value, onValueChange, style }) => {
   return (
-    <TouchableOpacity style={[styles.container, style]} onPress={() => onValueChange(!value)}>
+    <TouchableOpacity style={[styles.container, style]} onPress={() => onValueChange(!value)} testID='checkbox'>
       <View style={[styles.checkbox, value && styles.checkedCheckbox]}>
         {value && <View style={styles.innerCheckbox} />}
       </View>

@@ -8,11 +8,12 @@ interface ButtonComponentProps {
     style?: object;
     textStyle?: object;
     logoName?: string;
+    testID?: string;
     }
 
-const ButtonComponent = ({ title, onPress, style, textStyle, logoName }: ButtonComponentProps) => {
+const ButtonComponent = ({ title, onPress, style, textStyle, logoName, testID }: ButtonComponentProps) => {
   return (
-    <TouchableOpacity style={[styles.button, style]} onPress={onPress}>
+    <TouchableOpacity style={[styles.button, style]} onPress={onPress} testID={testID}>
       {logoName && <Text><Ionicons name={logoName as any} size={20}/></Text>}
       <Text style={[styles.buttonText, textStyle]}>{title}</Text>
     </TouchableOpacity>

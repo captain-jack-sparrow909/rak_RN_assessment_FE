@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubmissionSuccess should match the snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "marginTop": -120,
+      }
+    }
+  >
+    <View>
+      <Image
+        resizeMode="contain"
+        source={1}
+        style={
+          {
+            "height": 220,
+            "width": 220,
+          }
+        }
+      />
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "color": "#4CAF50",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "marginBottom": 20,
+      }
+    }
+  >
+    Successfully Submitted!
+  </Text>
+  <View>
+    <Image
+      source={1}
+      style={
+        {
+          "height": 220,
+          "width": 220,
+        }
+      }
+      testID="confirmation-icon"
+    />
+  </View>
+  <Text
+    style={
+      {
+        "color": "#888",
+        "fontSize": 16,
+        "marginTop": 10,
+        "textAlign": "center",
+      }
+    }
+  >
+    Our representative will get in touch with you shortly
+  </Text>
+</View>
+`;
