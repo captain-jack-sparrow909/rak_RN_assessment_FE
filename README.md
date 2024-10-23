@@ -44,6 +44,12 @@ To start the app:
 npx expo start
 ```
 
+### Running the Test cases and to see coverage:
+test coverage is more than 90%
+```bash
+npm run test -- --coverage
+```
+
 ### Start backend server
 clone this repo and start the server locally then when you click on the signup button the request will succeed and it won't throw you error
 ```bash
