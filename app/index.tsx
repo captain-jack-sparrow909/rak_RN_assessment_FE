@@ -43,12 +43,18 @@ export default function RegisterScreen() {
     setLoading(false);
     if(response?.id){
       navigation.navigate('submission-success');
+    } else if(!response){
+      throw new Error("An error occurred. Please try again later.");
     }
-    } catch (error) {
-      console.error(error);
+    } catch (error: any) {
+      setLoading(false);
+      let errorMessage = 'An error occurred. Please try again later.';
+      if (error?.message) {
+        errorMessage = error.message;
+      }
       Alert.alert(
         'Error',
-        'An error occurred. Please try again later.',
+        errorMessage,
         [{ text: 'OK' }]
       );
     }
