@@ -12,7 +12,7 @@
 ## 🏗️ Project Structure
 The project uses a file-based routing structure with the following folders:
 - `app/`: Contains screens and layout files
-    - `index.tsx/`: Main registration page which uses other re-usable components `explore.tsx`, etc.
+    - `index.tsx/`: Main registration page which uses other re-usable components etc.
     - `submission-success.tsx`: final screen that's shown when a successful API request is sent and a new user is created
 - `components/`: Reusable components (e.g., buttons, input fields)
 - `constants/`: Constant values used across the app
